@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arav | TikTok Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111317;
+      --accent: #00eaff;
+      --accent2: #7b2ff7;
+      --text: #e5e5e5;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 60px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 30px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .social-link a {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 17px;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      transition: 0.3s;
+    }
+
+    .social-link a:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 120px 60px 80px;
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid var(--accent);
+      width: 0;
+      animation: typing 4s steps(30) infinite, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      0% { width: 0; }
+      50% { width: 100%; }
+      100% { width: 0; }
+    }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: var(--accent); }
+    }
+
+    .hero p {
+      font-size: 21px;
+      opacity: 0.85;
+    }
+
+    /* Sections */
+    .section-title {
+      margin-top: 70px;
+      font-size: 32px;
+      font-weight: 600;
+      padding-left: 60px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Cards */
+    .cards {
+      padding: 40px 60px 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 35px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: 0.35s;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: var(--accent);
+      box-shadow: 0 8px 25px rgba(0, 234, 255, 0.15);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arav</h1>
+    <div class="social-link">
+      <a href="https://www.tiktok.com/@ecookie">@ecookie</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Arav 👋</h2>
+    <p>I love coding, creating smooth transitions, and building cool things on the internet. Welcome to my official creator website.</p>
+  </section>
+
+  <h2 class="section-title">What's my passion</h2>
+  <section class="cards">
+    <div class="card">
+      <h3>📱 TikTok Transitions</h3>
+      <p>I create modern, clean, and aesthetic transitions that stand out on your FYP.</p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Coding Projects</h3>
+      <p>I love coding and building tools, websites, and other digital creations.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Creative Editing</h3>
+      <p>From effects to timing, I focus on clean editing that keeps viewers watching.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Arav — All Rights Reserved
+  </footer>
+</body>
+</html>
